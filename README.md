@@ -2,7 +2,7 @@
 
 # School Library
 
-This is a school library app built on the foundation of OOP (object in object-oriented programming). The app enables you to:
+This is a school library app built on the foundation of OOP (object-oriented programming). The app enables you to:
 
 - Add new students or teachers.
 - Add new books.
