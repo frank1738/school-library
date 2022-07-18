@@ -2,7 +2,8 @@
 
 # School Library
 
-- This is a school library app built on the foundation of OOP (object in object-oriented programming). The app enables you to:
+This is a school library app built on the foundation of OOP (object in object-oriented programming). The app enables you to:
+
 - Add new students or teachers.
 - Add new books.
 - Save records of who borrowed a given book and when.
@@ -25,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - Clone the repository using the GitHub link provided below.
-- https://github.com/frank1738/school-library.git
+- `https://github.com/frank1738/school-library.git`
 
 ## Author
 

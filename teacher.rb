@@ -1,7 +1,6 @@
 module TeacherModule
   require_relative 'person'
   include PersonModule
-
   class Teacher < Person
     attr_accessor :specialization
 
@@ -15,4 +14,3 @@ module TeacherModule
     end
   end
 end
-

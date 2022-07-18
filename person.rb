@@ -3,7 +3,7 @@ module PersonModule
     attr_accessor :name, :age
     attr_reader :id
 
-    def initialize(age, name = 'Unknown', parent_permission = true)
+    def initialize(age, name = 'Unknown', parent_permission: true)
       @id = id
       @name = name
       @age = age
@@ -16,7 +16,7 @@ module PersonModule
 
     private
 
-    def is_of_age?
+    def of_age?
       @age >= 18
     end
   end
