@@ -103,20 +103,14 @@ class App
       end
       number = gets.chomp.to_i
       index = number - 1
-
       puts 'Type your ID: '
-      @people.each do |person|
-        puts "[#{person.class}] Name: #{person.name} | Age: #{person.age} | ID: #{person.id}"
-      end
+      @people.each { |person| puts "[#{person.class}] Name: #{person.name} | Age: #{person.age} | ID: #{person.id}" }
       identity = gets.chomp.to_i
-
       individual = @people.select { |person| person.id == identity }.first
-
       print 'Enter the date[yyyy-mm-dd]: '
       date = gets.chomp.to_s
       rent = Rental.new(date, @books[index], individual)
       @rentals << rent
-
       puts 'Book rented successfully'
     end
   end
@@ -133,7 +127,8 @@ class App
       puts ''
       rental.each_with_index do |record, index|
         puts "#{index + 1}| Date: #{record.date} | Borrower: #{record.person.name}
-                     | Status: #{record.person.class} | Borrowed book: \"#{record.book.title}\" by #{record.book.author}"
+                     | Status: #{record.person.class} | Borrowed book: \"
+                     #{record.book.title}\" by #{record.book.author}"
       end
     end
   end
